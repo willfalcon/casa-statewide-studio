@@ -1,0 +1,36 @@
+{
+  "root": true,
+  "project": {
+    "name": "CASA Mississippi"
+  },
+  "api": {
+    "projectId": "2sxl8rxn",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "barcode-input",
+    "@sanity/color-input",
+    "@sanity/code-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "./deskStructure.js"
+    }
+  ]
+}
