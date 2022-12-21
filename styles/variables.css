@@ -1,0 +1,14 @@
+@import url("https://use.typekit.net/hef2urc.css");
+
+:root {
+  --brand-primary: #003362;
+  --brand-primary--inverted: #ffffff;
+  --brand-secondary: #CC022E;
+  --brand-secondary--inverted: #ffffff;
+
+  --font-family-sans-serif: 'brandon-grotesque', sans-serif;
+
+}
+.pt-block h2 {
+  margin-top: 0;
+}

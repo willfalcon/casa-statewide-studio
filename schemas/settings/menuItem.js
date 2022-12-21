@@ -13,7 +13,7 @@ export default {
       name: 'link',
       title: 'Link',
       type: 'reference',
-      to: [{ type: 'page' }, { type: 'homePage' }],
+      to: [{ type: 'page' }, { type: 'homePage' }, { type: 'stories' }],
     },
     {
       name: 'externalUrl',

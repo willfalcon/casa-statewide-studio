@@ -34,6 +34,19 @@ export default {
       ],
     },
     {
+      name: 'pageTitleBackground',
+      title: 'Page Title Background Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
+      name: 'postsPerPage',
+      title: 'Stories Per Page',
+      type: 'number',
+    },
+    {
       name: 'customCSS',
       title: 'Custom CSS',
       type: 'code',

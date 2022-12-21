@@ -6,9 +6,6 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 // We import object and document schemas
 import blockContent from './blockContent';
 import category from './category';
-import product from './product';
-import vendor from './vendor';
-import productVariant from './productVariant';
 
 import localeString from './locale/String';
 import localeText from './locale/Text';
@@ -21,11 +18,21 @@ import colorOption from './settings/colorOption';
 import menuItem from './settings/menuItem';
 import internalLink from './internalLink';
 import subNavItem from './subNavItem';
+import mediaText from './blocks/mediaText';
+import infoBock from './blocks/infoBock';
+import accordions from './blocks/accordions';
+import button from './blocks/button';
+import youtube from './blocks/youtube';
+// import gallery, { galleryImage } from './blocks/gallery';
+
+import formFields from './formFields/index';
+import form from './form';
 
 import seoSettings from './seoSettings';
 import page from './page';
 import post from './post';
 import homePage from './homePage';
+import storiesPage from './storiesPage';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -44,7 +51,6 @@ export default createSchema({
     localeText,
     localeBlockContent,
     localeString,
-    productVariant,
 
     footerSettings,
     footerColumn,
@@ -53,10 +59,21 @@ export default createSchema({
     siteSettings,
     internalLink,
     subNavItem,
+    mediaText,
+    infoBock,
+    accordions,
+    button,
+    youtube,
+    ...formFields,
+    // galleryImage,
+    // gallery,
+
     seoSettings,
     page,
     post,
     homePage,
+    storiesPage,
     category,
+    form,
   ]),
 });

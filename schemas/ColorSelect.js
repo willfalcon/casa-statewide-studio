@@ -38,8 +38,6 @@ const ColorSelect = React.forwardRef((props, ref) => {
         colorPalette
       }`);
       const colorArr = colorPalette.map(color => ({ title: color.label, value: color.color.hex }));
-      console.log(colorArr);
-
       setColors(colorArr);
     };
     getColorOptions();

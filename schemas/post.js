@@ -39,6 +39,11 @@ export default {
       ],
     },
     {
+      name: 'subHeading',
+      title: 'Sub Heading',
+      type: 'string',
+    },
+    {
       name: 'categories',
       title: 'Categories',
       type: 'array',
@@ -49,11 +54,11 @@ export default {
       title: 'Published at',
       type: 'datetime',
     },
-    {
-      name: 'excerpt',
-      title: 'Excerpt',
-      type: 'text',
-    },
+    // {
+    //   name: 'excerpt',
+    //   title: 'Excerpt',
+    //   type: 'text',
+    // },
     {
       name: 'body',
       title: 'Body',

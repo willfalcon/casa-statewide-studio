@@ -75,6 +75,30 @@ export default {
       of: [{ type: 'subNavItem' }],
     },
     {
+      name: 'subscribeForm',
+      title: 'Subscribe Form',
+      type: 'reference',
+      to: [{ type: 'form' }],
+    },
+    {
+      name: 'subscribeImage',
+      title: 'subscribe Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          title: 'Alt',
+          type: 'string',
+          options: {
+            isHighlighted: true,
+          },
+        },
+      ],
+    },
+    {
       name: 'seoOptions',
       title: 'SEO Options',
       type: 'seoSettings',

@@ -1,0 +1,15 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#fff",
+    "titleBar.inactiveForeground": "#ffffffcc",
+    "titleBar.activeBackground": "#e03a2c",
+    "titleBar.inactiveBackground": "#af2c21"
+  },
+  "cSpell.words": [
+    "merch",
+    "spotify",
+    "viewheight",
+    "viewwidth",
+    "workpage"
+  ]
+}
