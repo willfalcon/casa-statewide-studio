@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsTextCenter } from 'react-icons/bs';
+import { BiLinkExternal, BiLinkAlt } from 'react-icons/bi';
 import GetInvolvedPreview from '../components/GetInvolvedPreview';
 
 /**
@@ -57,11 +58,26 @@ export default {
             title: 'URL',
             name: 'link',
             type: 'object',
+            icon: BiLinkExternal,
             fields: [
               {
                 title: 'URL',
                 name: 'href',
                 type: 'url',
+              },
+            ],
+          },
+          {
+            title: 'Internal Link',
+            name: 'internalLink',
+            type: 'object',
+            icon: BiLinkAlt,
+            fields: [
+              {
+                title: 'Link',
+                name: 'link',
+                type: 'reference',
+                to: [{ type: 'page' }, { type: 'homePage' }, { type: 'stories' }],
               },
             ],
           },
@@ -117,7 +133,7 @@ export default {
     },
     {
       name: 'getInvolved',
-      title: 'Get Involved',
+      title: 'Get Involved / Sub Nav',
       type: 'object',
       fields: [
         {

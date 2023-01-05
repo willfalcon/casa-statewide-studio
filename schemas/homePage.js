@@ -69,12 +69,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'subNav',
-      title: 'Sub Nav',
-      type: 'array',
-      of: [{ type: 'subNavItem' }],
-    },
-    {
       name: 'subscribeForm',
       title: 'Subscribe Form',
       type: 'reference',

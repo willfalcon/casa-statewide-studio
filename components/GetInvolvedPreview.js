@@ -11,7 +11,7 @@ const GetInvolvedPreview = ({ value }) => {
 
   useEffect(() => {
     async function getSubNav() {
-      const res = await client.fetch(`*[_id == 'homePage'][0] {
+      const res = await client.fetch(`*[_id == 'generalSettings'][0] {
         subNav
       }`);
       setSubNav(res.subNav);

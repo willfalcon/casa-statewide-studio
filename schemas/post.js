@@ -47,7 +47,7 @@ export default {
       name: 'categories',
       title: 'Categories',
       type: 'array',
-      of: [{ type: 'reference', to: { type: 'category' } }],
+      of: [{ type: 'reference', to: { name: 'category', type: 'category' } }],
     },
     {
       name: 'publishedAt',
@@ -63,6 +63,11 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'blockContent',
+    },
+    {
+      name: 'excerpt',
+      title: 'Excerpt',
+      type: 'text',
     },
     {
       name: 'seoOptions',

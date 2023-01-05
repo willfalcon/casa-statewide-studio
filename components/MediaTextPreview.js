@@ -9,10 +9,10 @@ const MediaTextPreview = props => {
 
   return (
     <StyledMediaText className="media-text" color={color} alignment={alignment}>
-      <div className="media-text__image-wrapper">{image.asset && <ImageComp className="media-text__image" image={image} />}</div>
+      <div className="media-text__image-wrapper">{image?.asset && <ImageComp className="media-text__image" image={image} />}</div>
       <div className="media-text__content">
-        <h2 className="media-text__heading">{heading}</h2>
-        <p className="media-text__text">{text}</p>
+        <h2 className="media-text__heading">{heading || 'Heading'}</h2>
+        <p className="media-text__text">{text || 'Text'}</p>
       </div>
     </StyledMediaText>
   );

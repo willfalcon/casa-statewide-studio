@@ -14,16 +14,6 @@ export default {
       type: 'image',
     },
     {
-      name: 'colorPalette',
-      title: 'Color Palette',
-      type: 'array',
-      of: [
-        {
-          type: 'colorOption',
-        },
-      ],
-    },
-    {
       name: 'mainMenu',
       title: 'Main Menu',
       type: 'array',
@@ -42,8 +32,38 @@ export default {
       },
     },
     {
+      name: 'subNav',
+      title: 'Sub Nav',
+      description: 'Used on the home page and in regular pages with the "Sub Nav" block.',
+      type: 'array',
+      of: [{ type: 'subNavItem' }],
+    },
+    {
+      name: 'specialCategories',
+      title: 'Stories Slider Categories',
+      description: 'The Stories slider on the home page and archive pages will show posts in these categories.',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'category' }] }],
+    },
+    {
+      name: 'sliderSlides',
+      title: 'Number of Stories Slider Posts',
+      type: 'number',
+    },
+    {
+      name: 'colorPalette',
+      title: 'Color Palette',
+      type: 'array',
+      of: [
+        {
+          type: 'colorOption',
+        },
+      ],
+    },
+    {
       name: 'postsPerPage',
-      title: 'Stories Per Page',
+      title: 'Posts Per Page',
+      description: 'How many posts show at a time on the post archive pages.',
       type: 'number',
     },
     {

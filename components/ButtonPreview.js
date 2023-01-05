@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import theme from './theme';
 
 const ButtonPreview = ({ value }) => {
-  const { label, color, alignment } = value;
+  const { label, color, alignment } = value || { color: null, alignment: null, label: 'Button Text' };
   const justifyContent = alignment === 'Center' ? 'center' : alignment === 'Right' ? 'flex-end' : 'flex-start';
+
   return (
     <ButtonWrapper style={{ justifyContent }}>
       <StyledButton color={color}>{label}</StyledButton>

@@ -4,6 +4,7 @@ import ImageComp from './ImageComp';
 import theme, { media } from './theme';
 
 const SubNav = ({ subNav }) => {
+  console.log(subNav);
   return (
     <StyledSubNav className="subnav">
       {subNav.map(item => (
